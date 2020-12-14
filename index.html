@@ -2,123 +2,153 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <!--Link FontAwesome ici-->
+        <!--Link stylesheet ici-->
+        <script src="https://kit.fontawesome.com/cd25f068f3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--En tête de la page-->
-        <header class="border purple">
-            <img id="logoReservia" src="image/reservia.svg" alt="logoReservia" class="borderRed">
-            <nav class="borderRed">
-                <ul>
-                    <li class="border blue">Hebergement</li>
-                    <li class="border blue">Activités</li>
-                    <li class="border blue">S'inscrire</li>
+        <header>
+            <img id="logoReservia" src="images/reservia.svg" alt="logoReservia" title="Logo">
+            <nav>
+                <ul class="navBar">
+                    <li>Hebergement</li>
+                    <li>Activités</li>
                 </ul>
+                <div class="inscription">
+                    <p>S'inscrire</p>
+                </div>
             </nav>
         </header>
-        <main class="border purple">
+        <main >
             <!--Titre-->
-            <div class="border red">
-                <div class="border blue">
+            <div class="zoneRecherche">
+                <div class="titreZone">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div> 
                 <!--Recherche-->
-                <div id="Recherche" class="border blue">
-                    <i class="fa"></i>
+                <div class="Recherche">
+                    <i class="fas fa-map-marker-alt"></i>
                     <p>Zone de texte</p>
                     <p>Bouton rechercher</p>
                 </div>
                 <!--Filtres-->
-                <div id="Filtres" class="border blue">
+                <div class="Filtres">
                     <h2>Filtres</h2>
-                    <div class ="border green">
-                        <i class="fa"></i>
-                        <p>Economique</p>
-                    </div>
-                    <div class ="border green">
-                        <i class="fa"></i>
-                        <p>Familial</p>
-                    </div>
-                    <div class ="border green">
-                        <i class="fa"></i>
-                        <p>Romantique</p>
-                    </div>
-                    <div class ="border green">
-                        <i class="fa"></i>
-                        <p>Animaux autorisés</p>
+                    <div>
+                        <div class ="textLogo">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <p>Economique</p>
+                        </div>
+                        <div class ="textLogo">
+                            <i class="fas fa-child"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div class ="textLogo">
+                            <i class="fas fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class ="textLogo">
+                            <i class="fas fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="border red">
-                <div id="resultatRecherche">
-                    <i class="fa"></i>
-                    <p>Plus de <!--Affichage nombre résultat recherche--> logements sont disponibles dans cette ville</p>
+            <div class="resultatRecherche">
+                <!--Recherche Hébergement-->
+                <div id="informationRecherche">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de <!--Affichage nombre résultat recherche-->500 logements sont disponibles dans cette ville</p>
                 </div>
-                <section id="HebergementVille" class="border blue">
-                    <h2>Hébergements à Marseille</h2>
+                <!--Les hébergements-->
+                <section id="hebergementVille">
+                    <h1>Hébergements à Marseille</h1>
                     <!--Résultats recherche hébergements-->
-                    <article id="RechercheHebergement1" class= "border green" >
-                        <img id="imgRechercheHebergement1">
-                        <h3>Auberge la Cannebière</h3>
-                        <p>Nuit à partir de 25€</p>
-                        <!--Popularité de l'hébergement-->
-                        <i class="fa>"></i>
-                    </article>
+                    <div>
+                        <article class="hebergementA">
+                            <img id="imgHebergementA" src=images/marcus-loke-WQJvWU_HZFo-unsplash.jpg alt="hebergement" title="Auberge la Cannebière">
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <!--Popularité de l'hébergement-->
+                            <div class="star">
+                                <div class="starBlue">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="starGrey">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                     <!--Affichage autres résultas requête-->
-                    <span>Afficher plus</span>
+                    <h2>Afficher plus</h2>
                 </section>
-                <section id="PopulariteHebergement" class="border blue">
-                    <h2>Les plus populaires</h2>
-                    <i class="fa"></i>
+                <!--Hébergements populaires-->
+                <section id="PopulariteHebergement">
+                    <h1>Les plus populaires</h1>
+                    <i class="fas fa-chart-line"></i>
                     <!--Résultats recherche hébergements-->
-                    <article id="PopulariteHebergement1" class="border green">
-                        <img id="imgPopulariteHebergement1">
+                    <article class="PopulariteHebergementA">
+                        <img id="imgPopulariteHebergementA" src=images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="popularite" title="Hôtel Le Soleil du matin">
                         <h3>Hôtel Le Soleil du matin</h3>
                         <p>Nuit à partir de 128€</p>
                         <!--Popularité de l'hébergement-->
-                        <i class="fa"></i>
+                        <div class="star">
+                            <div class="starBlue">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="starGrey">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </article>
                 </section>
-                <section id="ActiviteVille" class="border blue">
+                <!--Les activités-->
+                <section class="ActiviteVille">
                     <h2>Activités à Marseille</h2>
                     <!--Résultats recherche activité affichés en grand-->
-                    <article id="RechercheActivitésGrand1" class= "border green" >
-                        <img id="imgRechercheActivitéGrand1">
+                    <article class="ActivitésGrand">
+                        <img id="imgActivitéGrand">
                         <h3>Vieux Port</h3>
                     </article>
                     <!--Résultats recherche activité affichés en petit-->
-                    <article id="RechercheActivitésPetit1" class= "border green" >
-                        <img id="imgRechercheActivitéPetit1">
+                    <article class="RechercheActivitésPetit">
+                        <img id="imgRechercheActivitéPetit">
                         <h3>Vieux Port</h3>
                     </article>
                 </section>
             </div>
         </main>
-        <footer class="border purple">
-            <section id="aPropos" class="border red">
-                <h3>A propos</h3>
-                    <ul>
-                        <li><a href="fonctionnement_site.html">Fonctionnement du sites</a></li>
-                        <li><a href="CGV.html">Conditions générales de vente</a></li>
-                        <li><a href="donnees_confidentialite.html">Données et confidentialité</a></li>
-                    </ul>
-            </section>
-            <section id="nosHebergements" class="border red">
-                <h3>Nos hébergements</h3>
-                    <ul>
-                        <li><a href="charte_qualite.html">Charte qualité</a></li>
-                        <li><a href="soummettre_hotel.html">Soumettre votre hotêl</a></li>
-                    </ul>
-            </section>
-            <section id="Assistance" class="border red">
-                <h3>Assistance</h3>
-                    <ul>
-                        <li><a href="centre_aide.html">Centre d'aide</a></li>
-                        <li><a href="contact.html">Nous contacter</a></li>
-                    </ul>
-            </section>
+        <footer>
+            <div class="aPropos">
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="fonctionnement_site.html">Fonctionnement du sites</a></li>
+                    <li><a href="CGV.html">Conditions générales de vente</a></li>
+                    <li><a href="donnees_confidentialite.html">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="nosHebergements">
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="charte_qualite.html">Charte qualité</a></li>
+                    <li><a href="soummettre_hotel.html">Soumettre votre hotêl</a></li>
+                </ul>
+            </div>
+            <div class="Assistance">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="centre_aide.html">Centre d'aide</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
