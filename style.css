@@ -1,0 +1,138 @@
+body {
+    font-family: 'Raleway';
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: 900;
+}
+
+header {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar li{ 
+    list-style-type: none;
+    display: inline;
+}
+
+.titreZone {
+    display: inline;
+
+}
+
+.zoneRecherche {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Recherche div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.Recherche p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.typeFiltres {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.textLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#informationRecherche {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.star {
+    display: flex;
+    justify-content: space-around;
+    width: 90px;
+}
+
+.starBlue {
+    color:  #0065FC;
+}
+
+.starGrey {
+    color: #F2F2F2;
+}
+
+.hebergementVille {
+    display: flex;
+    width: 75%;
+    height: 40%;
+}
+
+.affichageHebergement{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hebergementA {
+    display: flex;
+    flex-direction: column;
+}
+
+#imgHebergementA {
+    max-width: 100%;
+    height: auto;
+}
+
+#imgPopulariteHebergementA {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul { 
+    list-style-type: none;
+    padding-left: 0px;
+    line-height: 30px;
+}
+
+
