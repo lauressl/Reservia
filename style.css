@@ -37,6 +37,12 @@ nav  {
     display: inline;
 }
 
+.navBar li: focus {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+
+}
+
 .titreZone {
     display: inline;
 
@@ -63,18 +69,31 @@ nav  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: auto;
+    width: 60m;
 }
 
 .typeFiltres {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    justify-content: space-between;
 }
 
-.textLogo {
+.borderFiltre {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
+    border: 0.2em solid #F2F2F2;
+    border-radius: 5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    width: auto;
+}
+
+.borderFiltre .fas {
+    color: #0065FC;
+    text-align: center;
+    z-index: 2;
 }
 
 #informationRecherche {
@@ -86,9 +105,12 @@ nav  {
 .star {
     display: flex;
     justify-content: space-around;
-    width: 90px;
+    width: 70px;
 }
 
+.star .fas {
+    font-size: 0.7em;
+}
 .starBlue {
     color:  #0065FC;
 }
@@ -96,17 +118,37 @@ nav  {
 .starGrey {
     color: #F2F2F2;
 }
+.resultatRechercheHebergement{
+    display: flex;
+    flex-direction: row;
+}
 
 .hebergementVille {
     display: flex;
-    width: 75%;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 70%;
     height: 40%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #F2F2F2;
 }
 
-.affichageHebergement{
+.hebergementA {
     display: flex;
     flex-wrap: wrap;
+    max-width: 30%;
+    max-height: 30%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    padding: 3px 3px 3px 3px;
+}
 
+.hebergementA p {
+    font-size: 0.9em;
 }
 
 .hebergementA {
@@ -115,24 +157,65 @@ nav  {
 }
 
 #imgHebergementA {
-    max-width: 100%;
-    height: auto;
+    width:100%;
+    min-height: 30%;
+    max-height: 30%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.populariteHebergement {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.titrePopularite {
+    display: flex;
+    flex-direction: row;
+}
+
+.populariteHebergementA {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    padding: 3px 3px 3px 3px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 #imgPopulariteHebergementA {
     max-width: 100%;
     height: auto;
+    border-radius: 10px 0px 0px 10px
 }
 
 footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer ul { 
     list-style-type: none;
     padding-left: 0px;
-    line-height: 30px;
+    line-height: 2em;
 }
 
+.elementFooter {
+    margin-bottom: 0.8em;
+}
 
