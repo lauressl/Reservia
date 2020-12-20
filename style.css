@@ -1,14 +1,14 @@
 body {
     font-family: 'Raleway';
     font-size: 0.8em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-left: 2em;
+    margin-right: 3em;
+    width: 100%;
 }
 
 /*style titres*/
 h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 900;
 }
 
@@ -40,13 +40,13 @@ nav  {
 nav li{
     list-style: none;
     display: inline;
-    padding: 2em 2em 0 0;
+    padding: 0 0 0 2em;
 }
 
 .active {
     border-top: 0.2em solid #0065FC;
     color: #0065FC;
-    padding: 2em 2em 0 0;
+    padding: 2em 0 0 0;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
 }
 
 .inscription {
-    padding: 2em 2em 0 0;
+    padding: 0 0 0 2em;
     color: #0065FC;
     font-weight: bold;
 }
@@ -105,6 +105,7 @@ button {
 .Filtres{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     margin: 1em 0em 1em 0em;
 }
@@ -113,6 +114,7 @@ button {
 .typeFiltres {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
     height: 2em;
@@ -180,37 +182,43 @@ button {
 .rechercheHebergement{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergementVille {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 65%;
-    height: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 50%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: #F2F2F2;
-    padding: 0.5em;
+    padding: 1.5em;
     margin-right: 1em;
+    line-height: 3em;
 }
 
 .affichageHebergement {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50%;
 }
 
 .hebergement {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 18em;
-    height: 15em;
+    width: 30%;
+    max-width: 40%;
+    max-height: 45%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
     line-height: 0.5em;
-    margin: 1em;
+    margin: 0.5em;
     padding: 3px 3px 3px 3px;
 }
 
@@ -222,6 +230,7 @@ button {
 #imgHebergement {
     width:100%;
     height: 10em;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -230,35 +239,38 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 35%;
-    height: 50%;
+    width: 25%;
+    min-height: 50%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: #F2F2F2;
-    padding: 0.5em;
+    padding: 2em;
 }
 
 .titrePopularite {
     display: flex;
     flex-direction: row;
-    align-self: start;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .affichagePopularite {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-self: center;
+    width: 100%;
 }
 
-.popularite {
+.popularite a{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 30%;
+    width: 80%;
+    height: 90%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
-    margin: 1em;
+    margin: 1.5em;
     padding: 3px 3px 3px 3px;
 }
 
@@ -275,15 +287,71 @@ button {
 #imgPopularite {
     width: 50%;
     height: auto;
+    object-fit: cover;
     border-radius: 10px 0px 0px 10px
 }
 
 /*Activites*/
-.ActivitesGrand {
+.rechercheActivite {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 30%;
-    max-height: 30%;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.activiteVille {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.activiteCol1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 50%;
+}
+
+.activiteCol2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 50%;
+}
+
+.activiteGrand {
+    display: flex;
+    max-width:90%;
+    max-height: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0.4em 0.4em 0.4em 0.4em grey;
+    margin: 1em;
+    padding: 3px 3px 3px 3px;
+}
+
+.activiteMoyen {
+    display: flex;
+    max-width: 50%;
+    max-height: 40%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    padding: 3px 3px 3px 3px;
+}
+
+.activitePetit {
+    display: flex;
+    max-width: 50%;
+    max-height: 40%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
@@ -293,8 +361,23 @@ button {
 
 #imgActiviteGrand {
     max-width: 100%;
-    height: auto;
-    border-radius: 10px 10px 10px 10px
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 1em 1em;
+}
+
+#imgActiviteMoyen{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 1em 1em;
+}
+
+#imgActivitePetit {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 1em 1em;
 }
 
 /*Footer*/

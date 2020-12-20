@@ -15,7 +15,7 @@
             <nav>
                 <ul class="navBarLien">
                     <li><a href="#hebergements" class="active">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="#titreActivite">Activités</a></li>
                 </ul>
                 <a class="inscription" href="#">S'inscrire</a>
             </nav>
@@ -77,18 +77,20 @@
                         <article class="hebergement">
                             <a href="#">
                                 <img id="imgHebergement" src=images/marcus-loke-WQJvWU_HZFo-unsplash.jpg alt="hebergement" title="Auberge la Cannebière">
-                                <h3>Auberge la Cannebière</h3>
-                                <p>Nuit à partir de 25€</p>
-                                <!--Popularité de l'hébergement-->
-                                <div class="star">
-                                    <div class="starBlue">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="starGrey">
-                                        <i class="fas fa-star"></i>
+                                <div class="txtHebergement">
+                                    <h3>Auberge la Cannebière</h3>
+                                    <p>Nuit à partir de 25€</p>
+                                    <!--Popularité de l'hébergement-->
+                                    <div class="star">
+                                        <div class="starBlue">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="starGrey">
+                                            <i class="fas fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -220,60 +222,105 @@
                             </a>
                         </article>
                         <article class="popularite">
-                            <img id="imgPopularite" src=images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="popularite" title="Hôtel Le Soleil du matin">
-                            <div class="descriptionPopularite">
-                                <h3>Hôtel Le Soleil du matin</h3>
-                                <p>Nuit à partir de 128€</p>
-                                <!--Popularité de l'hébergement-->
-                                <div class="star">
-                                    <div class="starBlue">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="starGrey">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                            <a href="#">
+                                <img id="imgPopularite" src=images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="popularite" title="Hôtel Le Soleil du matin">
+                                <div class="descriptionPopularite">
+                                    <h3>Hôtel Le Soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                    <!--Popularité de l'hébergement-->
+                                    <div class="star">
+                                        <div class="starBlue">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="starGrey">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </article>
                         <article class="popularite">
-                            <img id="imgPopularite" src=images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="popularite" title="Hôtel Le Soleil du matin">
-                            <div class="descriptionPopularite">
-                                <h3>Hôtel Le Soleil du matin</h3>
-                                <p>Nuit à partir de 128€</p>
-                                <!--Popularité de l'hébergement-->
-                                <div class="star">
-                                    <div class="starBlue">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="starGrey">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                            <a href="#">
+                                <img id="imgPopularite" src=images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg alt="popularite" title="Hôtel Le Soleil du matin">
+                                <div class="descriptionPopularite">
+                                    <h3>Hôtel Le Soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                    <!--Popularité de l'hébergement-->
+                                    <div class="star">
+                                        <div class="starBlue">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="starGrey">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </article>
                     </div>
                 </section>
-                <!--Les activités-->
             </div>
-            <div class= "resultatRechercheActivite">
+            <!--Les activités-->
+            <h1 id="titreActivite">Activités à Marseille</h1>
+            <div class= "rechercheActivite">
                 <section class="activiteVille">
-                    <h1 id="activites">Activités à Marseille</h1>
+                    <div class="activiteCol1">
                     <!--Résultats recherche activité affichés en grand-->
-                    <article class="ActivitesGrand">
-                        <img id="imgActiviteGrand" src=images/Activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg>
-                        <h3>Vieux Port</h3>
-                    </article>
-                    <!--Résultats recherche activité affichés en petit-->
-                    <article class="RechercheActivitésPetit">
-                        <img id="imgRechercheActivitePetit">
-                        <h3>Vieux Port</h3>
-                    </article>
+                        <article class="activiteGrand">
+                            <a href="#">
+                                <img id="imgActiviteGrand" src=images/Activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg>
+                                <h3>Vieux Port</h3>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="activiteCol2">
+                    <!--Résultats recherche activité affichés en moyen-->
+                        <article class="activiteMoyen">
+                            <a href="#">
+                                <img id="imgActiviteMoyen" src=images/Activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg>
+                                <div class="txtActivite">
+                                    <h3>Fort de Pomègues</h3>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Résultats recherche activité affichés en petit-->
+                        <article class="activitePetit">
+                            <a href="#">
+                                <img id="imgActivitePetit" src=images/Activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg>
+                                <h3>Iles du Frioul</h3>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+                <section class="activiteVille">
+                    <div class="activiteCol1">
+                        <article class="activiteGrand">
+                            <a href="#">
+                                <img id="imgActiviteGrand" src=images/Activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg>
+                                <h3>Parc National des Calanques</h3>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="activiteCol2">
+                        <article class="activitePetit">
+                            <a href="#">
+                                <img id="imgActivitePetit" src=images/Activites/florian-wehde-xW9e8gdotxI-unsplash.jpg>
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </a>
+                        </article>
+                        <article class="activiteMoyen">
+                            <a href="#">
+                                <img id="imgActiviteMoyen" src=images/Activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg>
+                                <h3>Parc Longchamp</h3>
+                            </a>
+                        </article>
+                    </div>
                 </section>
             </div>
         </main>
