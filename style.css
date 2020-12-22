@@ -1,24 +1,24 @@
 body {
     font-family: 'Raleway';
-    font-size: 0.8em;
+    font-size: 1em;
     margin-left: 2em;
     margin-right: 3em;
-    width: 100%;
+    height: auto;
 }
 
 /*style titres*/
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 900;
 }
 
 h3 {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 900;
 }
 
@@ -27,6 +27,14 @@ header {
     font-size: 0.9em;
     display: flex;
     justify-content: space-between;
+    height: 5%;
+    padding-top: 1em;
+}
+
+.headerMain {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
 }
 
 /*Navigation*/
@@ -34,7 +42,6 @@ nav  {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    padding: 2em 0 0 0;
 }
 
 nav li{
@@ -63,13 +70,16 @@ a {
 /*Recherche*/
 .titreZone {
     display: inline;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
 }
 
 .Recherche {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin: 1em 0em 1em 0em;
+    margin: 0em 0em 0em 0em;
+    height: 4em;
 }
 
 .logoRecherche {
@@ -79,8 +89,8 @@ a {
     border: none;
     border-radius: 1em 0em 0em 1em;
     background-color: #F2F2F2;
-    height: 3em;
-    width: 3em;
+    height: 4em;
+    width: 4em;
 }
 .Recherche .fas{
     font-size: 1em;
@@ -90,7 +100,7 @@ input {
     border: 1px solid #F2F2F2;
     font-size: 1em;
     font-weight: bold;
-    height: 3em;
+    height: 4em;
 }
 
 button {
@@ -98,8 +108,9 @@ button {
     border-radius: 0em 1em 1em 0em;
     background-color: #0065FC;
     color: white;
-    height: 2.8em;
-    font-size: 1em;
+    height: 3.8em;
+    width: 10em;
+    font-size: 1.1em;
 }
 
 .Filtres{
@@ -108,6 +119,7 @@ button {
     flex-wrap: wrap;
     align-items: baseline;
     margin: 1em 0em 1em 0em;
+    padding-top: 2em;
 }
 
 
@@ -132,7 +144,7 @@ button {
     border: 0.2em solid #F2F2F2;
     border-radius: 5em;
     width: auto;
-    height: 3em;
+    height: 4em;
     padding: 0em 1em 0em 0em;
     margin-left: 2em;
 }
@@ -144,8 +156,8 @@ button {
     border: none;
     border-radius: 2em 2em 2em 2em;
     background-color: #DEEBFF;
-    height: 3em;
-    width: 3em;
+    height: 4em;
+    width: 4em;
     margin-right: 1em;
 }
 
@@ -154,10 +166,24 @@ button {
     text-align: center;
 }
 
-#informationRecherche {
+.informationRecherche {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#logoInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    border-radius: 2em 2em 2em 2em;
+    height: 2em;
+    width: 2em;
+    margin-right: 1em;
 }
 
 /*Notation*/
@@ -183,6 +209,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 35%;
 }
 
 .hebergementVille {
@@ -190,7 +217,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
     width: 70%;
-    height: 50%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -204,8 +230,8 @@ button {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .hebergement {
@@ -213,7 +239,7 @@ button {
     flex-direction: column;
     width: 30%;
     max-width: 40%;
-    max-height: 45%;
+    height: 45%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
@@ -226,10 +252,20 @@ button {
     font-size: 0.9em;
     line-height: 1em;
 }
+.imgsHebergement{
+    width: 100%;
+    height: 65%;
+}
 
-#imgHebergement {
-    width:100%;
-    height: 10em;
+.txtHebergement {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+}
+
+.imgHebergement {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
@@ -239,8 +275,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
-    min-height: 50%;
+    width: 30%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -260,13 +295,14 @@ button {
     flex-direction: column;
     align-self: center;
     width: 100%;
+    height: 100%;
 }
 
-.popularite a{
+.popularite {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 35%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
@@ -284,9 +320,14 @@ button {
     padding-left:0.2em;
 }
 
+.imgsPopularite {
+    width: 40%;
+    height: 100%;
+}
+
 #imgPopularite {
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height : 100%;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px
 }
@@ -296,8 +337,7 @@ button {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50%;
-    border: 1px solid black;
+    height : 30%;
 }
 
 .activiteVille {
@@ -305,8 +345,6 @@ button {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
 }
 
 .activiteCol1 {
@@ -314,7 +352,6 @@ button {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    height: 50%;
 }
 
 .activiteCol2 {
@@ -322,62 +359,61 @@ button {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    height: 50%;
 }
 
 .activiteGrand {
     display: flex;
+    flex-direction: column;
     max-width:90%;
-    max-height: 100%;
+    height: 100%;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 1.5em;
     background-color: white;
-    box-shadow: 0.4em 0.4em 0.4em 0.4em grey;
+    box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
-    padding: 3px 3px 3px 3px;
 }
 
 .activiteMoyen {
     display: flex;
-    max-width: 50%;
-    max-height: 40%;
+    flex-direction: column;
+    height: 60%;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 1.5em;
     background-color: white;
+    box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
-    padding: 3px 3px 3px 3px;
 }
 
 .activitePetit {
     display: flex;
-    max-width: 50%;
-    max-height: 40%;
+    flex-direction: column;
+    height: 40%;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 1.5em;
     background-color: white;
+    box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
-    padding: 3px 3px 3px 3px;
 }
 
 #imgActiviteGrand {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 95%;
     object-fit: cover;
-    border-radius: 1em 1em 1em 1em;
+    border-radius: 1.7em 1.7em 0em 0em;
 }
 
 #imgActiviteMoyen{
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     object-fit: cover;
-    border-radius: 1em 1em 1em 1em;
+    border-radius: 1.7em 1.7em 0em 0em;
 }
 
 #imgActivitePetit {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     object-fit: cover;
-    border-radius: 1em 1em 1em 1em;
+    border-radius: 1.7em 1.7em 0em 0em;
 }
 
 /*Footer*/
@@ -387,9 +423,9 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: #F2F2F2;
-    padding : 0.1em 0em 0.5em 0em;
+    padding: 2em 2em 2em 2em;
     width : 100%;
-    height: auto;
+    height: 10%;
 }
 
 footer ul { 
@@ -398,13 +434,13 @@ footer ul {
     line-height: 2em;
 }
 
-.elementFooter {
-    margin-bottom: 0.8em;
-    padding: 0em 1em 0em 8em;
+.elementFooterParent{
+    display: flex;
+    flex-direction: row;
 }
 
-.elementFooterApropos {
+.elementFooter {
     margin-bottom: 0.8em;
-    padding: 0em 1em 0em 1em;
+    padding-right: 15em;
 }
 
