@@ -2,8 +2,8 @@ body {
     font-family: 'Raleway';
     font-size: 1em;
     margin-left: 2em;
-    margin-right: 3em;
-    height: auto;
+    margin-right: 2em;
+    height: 100%;
 }
 
 /*style titres*/
@@ -68,6 +68,10 @@ a {
 }
 
 /*Recherche*/
+main {
+    height: 70%;
+}
+
 .titreZone {
     display: inline;
     padding-top: 1em;
@@ -223,6 +227,7 @@ button {
     padding: 1.5em;
     margin-right: 1em;
     line-height: 3em;
+    height: 100%;
 }
 
 .affichageHebergement {
@@ -239,7 +244,7 @@ button {
     flex-direction: column;
     width: 30%;
     max-width: 40%;
-    height: 45%;
+    height: 30%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
@@ -367,7 +372,7 @@ button {
     max-width:90%;
     height: 100%;
     border: 1px solid white;
-    border-radius: 1.5em;
+    border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
@@ -378,7 +383,7 @@ button {
     flex-direction: column;
     height: 60%;
     border: 1px solid white;
-    border-radius: 1.5em;
+    border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
@@ -389,7 +394,7 @@ button {
     flex-direction: column;
     height: 40%;
     border: 1px solid white;
-    border-radius: 1.5em;
+    border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
     margin: 1em;
