@@ -27,27 +27,34 @@ header {
     font-size: 0.9em;
     display: flex;
     justify-content: space-between;
-    height: 3rem;
+    align-items: flex-start;
+    height: 3%;
     padding-top: 1em;
 }
+
 
 .headerMain {
     display: flex;
     flex-direction: column;
-    height: 25rem
+    height: 25%;
 }
 
 /*Navigation*/
+
 nav  {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: baseline;
+}
+
+.navBar {
+    display: flex;
 }
 
 nav li{
     list-style: none;
     display: inline;
-    padding: 0 0 0 2em;
+    padding: 0 0 0 3em;
 }
 
 .active {
@@ -63,8 +70,34 @@ a {
 
 .inscription {
     padding: 0 0 0 2em;
+    padding-top: 1.1em;
+}
+
+.inscription a {
     color: #0065FC;
     font-weight: bold;
+}
+
+@media all and (max-device-width: 1024px) {
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 8%;
+    }
+
+    .navBar li{
+        list-style: none;
+        display: inline;
+        padding-right: 3em;
+    }
+
+    .navBar {
+        width: 100%;
+    }
+
+    .inscription{
+        padding-top: 0em;
+    }
 }
 
 /*Recherche*/
@@ -113,7 +146,11 @@ button {
     font-size: 1.1em;
 }
 
-.Filtres{
+#boutonLogo {
+    display: none;
+}
+
+.Filtres {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -171,7 +208,6 @@ button {
     flex-direction: row;
     align-items: baseline;
     padding-top: 1em;
-    padding-bottom: 0.5em;
 }
 
 #logoInfo {
@@ -184,6 +220,24 @@ button {
     height: 2em;
     width: 2em;
     margin-right: 1em;
+}
+
+@media all and (max-device-width: 1024px) {
+    .Filtres {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:left;
+        height: 20rem;
+    }
+
+    #boutonLogo {
+        display: inline;
+        width: 5em;
+    }
+
+    #boutonRecherche {
+        display: none;
+    }
 }
 
 /*Notation*/
@@ -209,8 +263,9 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 45rem;
+    height: 50rem;
     padding-bottom: 2em;
+    padding-top: 1em;
 }
 
 .hebergementVille {
@@ -232,6 +287,7 @@ button {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 80%;
 }
 
 .hebergement {
@@ -239,7 +295,7 @@ button {
     flex-direction: column;
     width: 30%;
     max-width: 40%;
-    height: 15rem;
+    height: 40%;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
@@ -306,12 +362,13 @@ button {
     border-radius: 10px;
     background-color: white;
     margin: 1.5em;
-    padding: 3px 3px 3px 3px;
+    padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
 .descriptionPopularite {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
     padding-left:0.2em;
@@ -323,7 +380,7 @@ button {
 }
 
 .imgsPopularite {
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 
@@ -445,6 +502,7 @@ footer ul {
 .elementFooterParent{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .elementFooter {
