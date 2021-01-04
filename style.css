@@ -150,7 +150,6 @@ button {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
-    height: 1.5em;
     margin-left: 1em;
 }
 
@@ -260,7 +259,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 30%;
-    max-width: 40%;
     height: 40%;
     border: 1px solid white;
     border-radius: 10px;
@@ -525,9 +523,16 @@ button {
     .Filtres {
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: stretch;
-        height: 20rem;
+        align-items: flex-start;
         padding-bottom: 1em;
+    }
+
+    .typeFiltres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
     }
 
     #boutonLogo {
@@ -541,5 +546,88 @@ button {
 
     .rechercheHebergement {
         flex-direction: column-reverse;
+    }
+
+    .hebergementVille {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .affichageHebergement {
+        flex-flow: column;
+        width : 100%;
+        height: 100%;
+    }
+
+    .hebergement {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 15%;
+    }
+
+    .hebergement p {
+        font-size: 0.9em;
+        line-height: 0.5em;
+    }
+    .imgsHebergement{
+        width: 100%;
+        height: 75%;
+    }
+    
+    .txtHebergement {
+        display: flex;
+        flex-direction: column;
+        height: 35%;
+    }
+
+    .populariteHebergement {
+        width : 100%;
+        margin-bottom: 2em;
+    }
+
+    .rechercheActivite {
+        flex-direction: column;
+    }
+
+    .activiteVille {
+        flex-direction: column;
+    }
+    
+    .activiteCol1 {
+        width: 100%;
+    }
+    
+    .activiteCol2 {
+        width: 100%;
+    }
+    
+    .activiteGrand {
+        height: 100%;
+    }
+    
+    .activiteMoyen {
+        height: 50%;
+    }
+    
+    .activitePetit {
+        height: 50%;
+    }
+    
+    .imgActiviteGrand {
+        height: 95%;
+    }
+    
+    .imgActiviteMoyen{
+        height: 80%;
+    }
+    
+    .imgActivitePetit {
+        height: 85%;
+    }
+
+    .elementFooterParent{
+        flex-direction: column;
+        width: 100%;
     }
 }
