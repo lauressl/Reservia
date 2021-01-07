@@ -478,11 +478,11 @@ button {
     padding-right: 15em;
 }
 
-@media all and (max-device-width: 1024px) {
+@media all and (max-width: 1250px) {
     header{
         flex-direction: row;
         flex-wrap: wrap;
-        height: 8%;
+        width: 100%;
     }
 
     .navBar li{
@@ -490,7 +490,7 @@ button {
         display: inline;
         padding-right: 3em;
         padding-left: 0;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .navBar {
@@ -508,7 +508,7 @@ button {
     .active {
         border-top: none;
         border-bottom: 0.2em solid #0065FC;
-        width: 5em;
+        width: 50%;
         color: #0065FC;
         padding: 0 0 1em 0;
     }
@@ -543,6 +543,7 @@ button {
 
     .hebergementVille {
         width: 100%;
+        height: 80%;
         justify-content: space-around;
     }
 
@@ -560,8 +561,8 @@ button {
     }
 
     .hebergement p {
-        font-size: 0.9em;
-        line-height: 0.5em;
+        font-size: 1em;
+        line-height: 1em;
     }
     .imgsHebergement{
         width: 100%;
@@ -577,6 +578,11 @@ button {
     .populariteHebergement {
         width : 100%;
         margin-bottom: 2em;
+    }
+
+    .descriptionPopularite p {
+        font-size: 1em;
+        line-height: 0.4em;
     }
 
     .rechercheActivite {
@@ -596,27 +602,18 @@ button {
     }
     
     .activiteGrand {
+        width: 100%;
         height: 100%;
     }
     
     .activiteMoyen {
+        width: 100%;
         height: 50%;
     }
     
     .activitePetit {
+        width: 100%;
         height: 50%;
-    }
-    
-    .imgActiviteGrand {
-        height: 95%;
-    }
-    
-    .imgActiviteMoyen{
-        height: 80%;
-    }
-    
-    .imgActivitePetit {
-        height: 85%;
     }
 
     .elementFooterParent{
