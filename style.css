@@ -41,6 +41,7 @@ main {
     height: 90%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2em;;
 }
 
 nav  {
@@ -150,14 +151,13 @@ button {
     height: 30%;
 }
 
-
 .typeFiltres {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: auto;
+    width: 70%;
 }
 
 .borderFiltre:hover{
@@ -170,7 +170,6 @@ button {
     align-items: baseline;
     border: 0.2em solid #F2F2F2;
     border-radius: 5em;
-    width: auto;
     height: 3em;
     padding: 0em 1em 0em 0em;
 }
@@ -288,7 +287,7 @@ button {
 .txtHebergement {
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 30%;
 }
 
 .imgHebergement {
@@ -336,6 +335,7 @@ button {
     height: 25%;
     border-radius: 10px;
     background-color: white;
+    padding: 3px 3px 3px 3px;
 }
 
 .descriptionPopularite {
@@ -344,7 +344,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    padding-left:0.2em;
     width: 50%;
 }
 
@@ -485,25 +484,26 @@ button {
 .elementFooterParent{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
     height: 90%;
 }
 
-@media all and (max-width: 1250px) {
+@media all and (max-width: 1024px) {
     html {
-        height: 100%;
+        height: 150%;
     }
 
     body{
-        height: 200%;
+        height: 250%;
     }
    
     header{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        height: 8%;
+        height: 4%;
     }
 
     .imgHeader {
@@ -521,7 +521,7 @@ button {
         width: 100%;
         display: flex;
         height: 50%;
-        padding-top: 2em;
+        padding-top: 1.8em;
     }
 
     .navBarLien {
@@ -548,12 +548,24 @@ button {
         padding: 0 0 1em 0;
     }
 
+    main {
+        height: 150%;
+    }
+
+    .headerMain {
+        height: 12%;
+    }
+
+    .Recherche {
+        height: 10%;
+    }
+
     .Filtres {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
         padding-bottom: 1em;
-        height: 30%;
+        height: 40%;
     }
 
     .typeFiltres {
@@ -572,9 +584,13 @@ button {
         display: none;
     }
 
+    .informationRecherche {
+        height: 20%;
+    }
+
     .rechercheHebergement {
         flex-direction: column-reverse;
-        height: 40%;
+        height: 55%;
     }
 
     .hebergementVille {
@@ -586,6 +602,7 @@ button {
     .affichageHebergement {
         flex-flow: column;
         width : 100%;
+        height: 90%;
     }
     .hebergement {
         width: 90%;
@@ -594,7 +611,7 @@ button {
     
     .imgsHebergement{
         width: 100%;
-        height: 75%;
+        height: 60%;
     }
     
     .txtHebergement {
@@ -605,7 +622,7 @@ button {
     
     .populariteHebergement {
         width : 100%;
-        height: 30%;
+        height: 25%;
         margin-bottom: 2em;
     }
 
@@ -614,26 +631,57 @@ button {
     }
 
     #activite {
-        height: 40%;
+        height: 32%;
+        width: 100%;
     }
 
     .rechercheActivite {
         flex-direction: column;
-        height: 100%;
+        height: 70%;
     }
     
     .activiteVille {
         flex-direction: column;
-        height: 100%;
+        justify-content: space-around;
+        height: 70%;
+        width: 100%;
     }
     
     .activiteCol1 {
         width: 100%;
-        height: 30%;
+        height: 28%;
     }
     
     .activiteCol2 {
         width: 100%;
-        height: 70%;
+        height: 65%;
+    }
+
+    .activiteGrand {
+        height: 100%;
+    }
+    
+    .activiteMoyen {
+        height: 45%;
+    }
+    
+    .activitePetit {
+        height: 45%;
+    }
+
+    .imgActiviteGrand {
+        height: 80%;
+    }
+    
+    .imgActiviteMoyen{
+        height: 80%;
+    }
+    
+    .imgActivitePetit {
+        height: 80%;
+    }
+
+    .footer {
+        height: 13%;
     }
 }
