@@ -61,7 +61,7 @@ nav li{
     padding: 0 0 0 3em;
 }
 
-.active {
+.active:hover{
     border-top: 0.2em solid #0065FC;
     color: #0065FC;
     padding: 2em 0 0 0;
@@ -148,7 +148,7 @@ button {
     align-items: baseline;
     margin: 1em 0em 1em 0em;
     padding-top: 1em;
-    height: 30%;
+    height: 20%;
 }
 
 .typeFiltres {
@@ -157,7 +157,7 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    width: 65%;
 }
 
 .borderFiltre:hover{
@@ -196,7 +196,7 @@ button {
     flex-direction: row;
     align-items: baseline;
     padding-top: 1em;
-    height: 20%;
+    height: 15%;
 }
 
 #logoInfo {
@@ -330,7 +330,7 @@ button {
 .popularite {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
     height: 25%;
     border-radius: 10px;
@@ -411,7 +411,6 @@ button {
 .activiteGrand {
     display: flex;
     flex-direction: column;
-    max-width:90%;
     height: 100%;
     border: 1px solid white;
     border-radius: 1.7em;
@@ -451,14 +450,14 @@ button {
 
 .imgActiviteMoyen{
     width: 100%;
-    height: 85%;
+    height: 87%;
     object-fit: cover;
     border-radius: 1.7em 1.7em 0em 0em;
 }
 
 .imgActivitePetit {
     width: 100%;
-    height: 75%;
+    height: 80%;
     object-fit: cover;
     border-radius: 1.7em 1.7em 0em 0em;
 }
@@ -470,7 +469,7 @@ button {
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: #F2F2F2;
-    padding: 2em 2em 2em 2em;
+    padding-top: 2em;
     width : 100%;
     height: 8%;
 }
@@ -486,7 +485,8 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 70%;
+    padding: 1em;
+    width: 65%;
     height: 90%;
 }
 
@@ -497,13 +497,15 @@ button {
 
     body{
         height: 250%;
+        margin:0;
     }
    
     header{
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        width: 95%;
         height: 4%;
+        padding-left: 0.5em;;
     }
 
     .imgHeader {
@@ -511,41 +513,47 @@ button {
     }
 
     .navBar li{
-        list-style: none;
-        display: inline;
-        font-size: 1.1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2em;
         width: 50%;
+        border-top: none;
+        border-bottom: 0.2em solid #F2F2F2;
+        padding-bottom: 1.5em;
+        padding-right:0;
+    }
+
+    .navBar li:hover{
+        border-bottom: 0.2em solid #0065FC;
+    }
+
+    .active:hover{
+        border-top: none;
+        color: #0065FC;
+        padding-bottom:0;
     }
 
     .navBar {
         width: 100%;
         display: flex;
-        height: 50%;
-        padding-top: 1.8em;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 90%;
     }
 
     .navBarLien {
+        display: flex;
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-end;
-        height: 10%;
         padding: 0;
-        padding-top: 2em;
     }
 
     .inscription{
-        padding-top: 0em;
+        padding: 0em;
         display: flex;
-        align-self: flex-start;
-    }
-
-    .active {
-        border-top: none;
-        border-bottom: 0.2em solid #0065FC;
-        width: 50%;
-        color: #0065FC;
-        padding: 0 0 1em 0;
+        align-self: flex-end;
     }
 
     main {
@@ -554,6 +562,8 @@ button {
 
     .headerMain {
         height: 12%;
+        width: 90%;
+        padding-left: 0.5em;
     }
 
     .Recherche {
@@ -573,6 +583,10 @@ button {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .Recherche {
+        margin-left: 2em;
     }
 
     #boutonLogo {
@@ -595,8 +609,13 @@ button {
 
     .hebergementVille {
         width: 100%;
-        height: 70%;
+        height: 72%;
         justify-content: space-around;
+        padding: 0;
+    }
+
+    #hebergements {
+        padding-left: 1em;;
     }
     
     .affichageHebergement {
@@ -611,7 +630,7 @@ button {
     
     .imgsHebergement{
         width: 100%;
-        height: 60%;
+        height: 65%;
     }
     
     .txtHebergement {
@@ -619,25 +638,45 @@ button {
         flex-direction: column;
         height: 35%;
     }
+
+    #afficher {
+        padding-left: 1em;;
+    }
     
     .populariteHebergement {
         width : 100%;
-        height: 25%;
+        height: 26%;
         margin-bottom: 2em;
+        padding: 0;
+    }
+
+    .titrePopularite {
+        width: 90%;
+    }
+    
+    .affichagePopularite { 
+        width: 90%;
+        height: 85%;
+        justify-self: center;
     }
 
     .popularite {
         height: 30%;
+        width:100%;
     }
 
     #activite {
         height: 32%;
-        width: 100%;
+        width: 94%;
     }
 
     .rechercheActivite {
         flex-direction: column;
         height: 70%;
+    }
+
+    #titreActivite{
+        padding-left: 1em;
     }
     
     .activiteVille {
@@ -649,24 +688,27 @@ button {
     
     .activiteCol1 {
         width: 100%;
-        height: 28%;
+        height: 29%;
     }
     
     .activiteCol2 {
         width: 100%;
-        height: 65%;
+        height: 67%;
     }
 
     .activiteGrand {
         height: 100%;
+        width: 100%;
     }
     
     .activiteMoyen {
         height: 45%;
+        width: 100%;
     }
     
     .activitePetit {
         height: 45%;
+        width: 100%;
     }
 
     .imgActiviteGrand {
@@ -683,5 +725,6 @@ button {
 
     .footer {
         height: 13%;
+        padding:0;
     }
 }
