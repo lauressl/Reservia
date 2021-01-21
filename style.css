@@ -167,7 +167,7 @@ button {
 .borderFiltre {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     border: 0.2em solid #F2F2F2;
     border-radius: 5em;
     height: 3em;
@@ -490,7 +490,7 @@ button {
     height: 90%;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1260px) {
     html {
         height: 150%;
     }
