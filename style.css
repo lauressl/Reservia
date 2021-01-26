@@ -327,9 +327,10 @@ button {
 .descriptionPopularite {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     width: 190px;
+    height: 125px;
 }
 
 .descriptionPopularite p {
@@ -668,8 +669,9 @@ button {
         height: 100%;
     }
 
-    .descriptionPolpularite {
+    .descriptionPopularite {
         width: 240px;
+        height: 160px;
     }
 
     #activite {
