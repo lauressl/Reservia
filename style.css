@@ -482,7 +482,7 @@ button {
     height: 90%;
 }
 
-@media all and (min-width: 761px) and (max-width: 1024px) {
+@media all and (min-width: 761px) and (max-width: 1330px) {
     html {
         height: 150%;
     }
