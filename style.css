@@ -108,8 +108,8 @@ main {
     border: none;
     border-radius: 1em 0em 0em 1em;
     background-color: #F2F2F2;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
 }
 .Recherche .fas{
     font-size: 1em;
@@ -119,7 +119,8 @@ input {
     border: 1px solid #F2F2F2;
     font-size: 1em;
     font-weight: bold;
-    height: 50px;
+    height: 55px;
+    width: 250px;
 }
 
 button {
@@ -127,9 +128,10 @@ button {
     border-radius: 0em 1em 1em 0em;
     background-color: #0065FC;
     color: white;
-    height: 50px;
-    width: 150px;
-    font-size: 16px;
+    height: 55px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #boutonLogo {
@@ -176,8 +178,8 @@ button {
     border: none;
     border-radius: 2em 2em 2em 2em;
     background-color: #DEEBFF;
-    height: 3em;
-    width: 3em;
+    height: 50px;
+    width: 50px;
     margin-right: 1em;
 }
 
@@ -213,7 +215,7 @@ button {
 }
 
 .star .fas {
-    font-size: 10px;
+    font-size: 11px;
 }
 .starBlue {
     color:  #0065FC;
@@ -281,7 +283,7 @@ button {
     width: 100%;
     height: 120px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 /*Popularite*/
@@ -355,25 +357,33 @@ button {
 }
 .titreActivite{
     padding-top: 2em;
+    margin-left: 10px;
 }
 .rechercheActivite {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 470px;
-    padding-bottom : 2em;
 }
 
 .nomActivite{
     margin-left: 1em;
 }
 
-.activiteVille {
+.activiteVille1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 470px;
+    height: 440px;
+}
+
+.activiteVille2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 440px;
+    margin-left: 30px;
 }
 
 .activiteCol1 {
@@ -381,6 +391,7 @@ button {
     flex-direction: column;
     width: 50%;
     height: auto;
+    margin-right: 15px;
 }
 
 .activiteCol2 {
@@ -389,17 +400,17 @@ button {
     justify-content: space-between;
     width: 50%;
     height: auto;
+    margin-left: 15px;
 }
 
 .activiteGrand {
     display: flex;
     flex-direction: column;
-    height: 470px;
+    height: 440px;
     border: 1px ;
     border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
-    margin: 1em;
 }
 
 .activiteMoyen {
@@ -410,7 +421,6 @@ button {
     border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
-    margin: 1em;
 }
 
 .activitePetit {
@@ -421,7 +431,6 @@ button {
     border-radius: 1.7em;
     background-color: white;
     box-shadow:0 0 3em 0 #a5a5a5;
-    margin: 1em;
 }
 
 .imgActiviteGrand {
@@ -473,21 +482,20 @@ button {
     height: 90%;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 900px) {
     html {
         height: 150%;
     }
 
     body{
-        height: 250%;
-        margin:0;
+        height: 4800px;
+        width: 375px;
     }
    
     header{
         flex-direction: row;
         flex-wrap: wrap;
-        width: 95%;
-        height: 4%;
+        height: 135px;
         padding-left: 0.5em;;
     }
 
@@ -503,8 +511,7 @@ button {
         width: 50%;
         border-top: none;
         border-bottom: 0.2em solid #F2F2F2;
-        padding-bottom: 1.5em;
-        padding-right:0;
+        padding: 0em 0em 1.5em 0em;
     }
 
     .navBar li:hover{
@@ -522,7 +529,7 @@ button {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        height: 90%;
+        padding-left:0;
     }
 
     .navBarLien {
@@ -534,47 +541,53 @@ button {
     }
 
     .inscription{
-        padding: 0em;
+        padding: 1em;
         display: flex;
         align-self: flex-end;
     }
 
     main {
-        height: 150%;
+        height: 4130px;
     }
 
     .headerMain {
-        height: 12%;
-        width: 90%;
+        height: 600px;
         padding-left: 0.5em;
     }
 
+    .titreZone{
+        height: 115px;
+        padding:0;
+    }
+
     .Recherche {
-        height: 10%;
+        height: 55px;
     }
 
     .Filtres {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 1em;
-        height: 40%;
+        height: 250px;
+        padding: 0;
     }
 
     .typeFiltres {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
+        width: 100%;
     }
 
-    .Recherche {
-        margin-left: 2em;
+    .borderFiltre {
+        margin: 0 10px 10px 0;
     }
 
     #boutonLogo {
         display: inline;
-        width: 5em;
+        width: 55px;
+        border-radius: 20px;
     }
 
     #boutonRecherche {
@@ -582,44 +595,46 @@ button {
     }
 
     .informationRecherche {
-        height: 20%;
+        height: 90px;
     }
 
     .rechercheHebergement {
         flex-direction: column-reverse;
-        height: 55%;
+        height: 2140px;
+        padding: 0 0 30px 0;
     }
 
     .hebergementVille {
         width: 100%;
-        height: 72%;
+        height: 1550px;
         justify-content: space-around;
         padding: 0;
-    }
-
-    #hebergements {
-        padding-left: 1em;;
+        background: none;
     }
     
+    #hebergements{
+        padding-left: 5px;
+    }
+
     .affichageHebergement {
         flex-flow: column;
-        width : 100%;
-        height: 90%;
+        height: 1440px;
     }
     .hebergement {
-        width: 90%;
-        height: 15%;
+        width: 350px;
+        height: 200px;
+        box-shadow: 1px 2px 1px 1px #F2F2F2;
     }
     
     .imgsHebergement{
         width: 100%;
-        height: 65%;
+        height: 100px;
     }
     
     .txtHebergement {
         display: flex;
         flex-direction: column;
-        height: 35%;
+        height: 84px;
     }
 
     #afficher {
@@ -628,70 +643,89 @@ button {
     
     .populariteHebergement {
         width : 100%;
-        height: 26%;
-        margin-bottom: 2em;
-        padding: 0;
+        height: 570px;
+        margin-bottom: 20px;
+        padding: 30px 0 20px 0;
+        border-radius: 0;
     }
 
     .titrePopularite {
         width: 90%;
     }
     
-    .affichagePopularite { 
-        width: 90%;
-        height: 85%;
-        justify-self: center;
+    .affichagePopularite {
+        height: 470px;
     }
 
     .popularite {
-        height: 30%;
-        width:100%;
+        height: 130px;
+        width: 320px;
+        box-shadow: 1px 2px 1px 1px #F2F2F2;
+    }
+
+    .imgsPopularite {
+        width: 125px;
+        height: 100%;
+    }
+
+    .descriptionPolpularite {
+        width: 175px;
     }
 
     #activite {
-        height: 32%;
-        width: 94%;
+        height: 1415px;
+        padding-left: 12px;
+        width: 350px;
     }
 
     .rechercheActivite {
         flex-direction: column;
-        height: 70%;
+        height: 1380px;
     }
 
     #titreActivite{
-        padding-left: 1em;
+        padding-left: 15px;
+        height: 35px;
     }
     
-    .activiteVille {
+    .activiteVille1 {
         flex-direction: column;
-        justify-content: space-between;
-        height: 70%;
-        width: 100%;
+        height: 680px;
+        width: 350px;
+    }
+
+    .activiteVille2 {
+        flex-direction: column;
+        height: 680px;
+        width: 350px;
+        margin:0;
     }
     
     .activiteCol1 {
-        width: 100%;
-        height: 29%;
+        width: 350px;
+        height: 200px;
+        margin: 0;
     }
     
     .activiteCol2 {
-        width: 100%;
-        height: 67%;
+        width: 350px;
+        height: 425px;
+        margin: 0;
     }
 
     .activiteGrand {
-        height: 100%;
-        width: 100%;
+        height: 200px;
+        width: 350px;
     }
     
     .activiteMoyen {
-        height: 45%;
-        width: 100%;
+        height: 200px;
+        width: 350px;
     }
     
     .activitePetit {
-        height: 45%;
-        width: 100%;
+        height: 200px;
+        width: 350px;
     }
 
     .imgActiviteGrand {
@@ -707,7 +741,11 @@ button {
     }
 
     .footer {
-        height: 13%;
-        padding:0.5;
+        height: 510px;
     }
+
+    .elementFooterParent {
+
+    flex-direction: column;
+    height: 500px;
 }
