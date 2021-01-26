@@ -410,7 +410,7 @@ button {
     border: 1px ;
     border-radius: 1.7em;
     background-color: white;
-    box-shadow:0 0 3em 0 #a5a5a5;
+    box-shadow: 2px 5px 10px 1px #F2F2F2;
 }
 
 .activiteMoyen {
@@ -420,7 +420,7 @@ button {
     border: 1px;
     border-radius: 1.7em;
     background-color: white;
-    box-shadow:0 0 3em 0 #a5a5a5;
+    box-shadow: 2px 5px 10px 1px #F2F2F2;
 }
 
 .activitePetit {
@@ -430,7 +430,7 @@ button {
     border: 1px;
     border-radius: 1.7em;
     background-color: white;
-    box-shadow:0 0 3em 0 #a5a5a5;
+    box-shadow: 2px 5px 10px 1px #F2F2F2;
 }
 
 .imgActiviteGrand {
@@ -482,7 +482,275 @@ button {
     height: 90%;
 }
 
-@media all and (max-width: 900px) {
+@media all and (min-width: 761px) and (max-width: 1024px) {
+    html {
+        height: 150%;
+    }
+
+    body{
+        height: 3360px;
+        width: 750px;
+    }
+   
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 170px;
+        padding-left: 0.5em;;
+    }
+
+    .imgHeader {
+        height:0;
+    }
+
+    .navBar li{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2em;
+        width: 50%;
+        border-top: none;
+        border-bottom: 0.2em solid #F2F2F2;
+        padding: 0em 0em 1.5em 0em;
+    }
+
+    .navBar li:hover{
+        color: #0065FC;
+        border-bottom: 0.2em solid #0065FC;
+    }
+
+    .active:hover{
+        border-top: none;
+        padding-top:0;
+    }
+
+    .navBar {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-left:0;
+    }
+
+    .navBarLien {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .inscription{
+        padding: 1em;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    main {
+        height: 2900px;
+    }
+
+    .headerMain {
+        height: 600px;
+        padding-left: 0.5em;
+    }
+
+    .titreZone{
+        height: 115px;
+        padding:0;
+    }
+
+    .Recherche {
+        height: 60px;
+    }
+
+    .Filtres {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 160px;
+        padding: 0;
+    }
+
+    .typeFiltres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .borderFiltre {
+        margin: 0 10px 10px 0;
+    }
+
+    #boutonLogo {
+        display: inline;
+        width: 55px;
+        border-radius: 20px;
+    }
+
+    #boutonRecherche {
+        display: none;
+    }
+
+    .informationRecherche {
+        height: 90px;
+    }
+
+    .rechercheHebergement {
+        flex-direction: column-reverse;
+        height: 1650px;
+        padding: 0 0 30px 0;
+    }
+
+    .hebergementVille {
+        width: 100%;
+        height: 950px;
+        justify-content: space-around;
+        padding: 0;
+        background: none;
+    }
+    
+    #hebergements{
+        padding-left: 5px;
+    }
+
+    .affichageHebergement {
+        flex-flow: row wrap;
+        height: 750px;
+    }
+    .hebergement {
+        width: 349px;
+        height: 200px;
+        box-shadow: 2px 5px 10px 1px #F2F2F2;
+    }
+    
+    .imgsHebergement{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .txtHebergement {
+        display: flex;
+        flex-direction: column;
+        height: 84px;
+    }
+
+    #afficher {
+        padding-left: 1em;;
+    }
+    
+    .populariteHebergement {
+        width : 100%;
+        height: 670px;
+        margin-bottom: 20px;
+        padding: 30px 0 20px 0;
+        border-radius: 0;
+    }
+
+    .titrePopularite {
+        width: 60%;
+    }
+    
+    .affichagePopularite {
+        height: 570px;
+    }
+
+    .popularite {
+        height: 165px;
+        width: 440px;
+        box-shadow: 2px 5px 10px 1px #F2F2F2;
+    }
+
+    .imgsPopularite {
+        width: 180px;
+        height: 100%;
+    }
+
+    .descriptionPolpularite {
+        width: 240px;
+    }
+
+    #activite {
+        height: 750px;
+        padding-left: 12px;
+        width: 96%;
+    }
+
+    .rechercheActivite {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #titreActivite{
+        padding-left: 15px;
+        height: 35px;
+    }
+    
+    .activiteVille1 {
+        flex-direction: column;
+        height: 680px;
+        width: 350px;
+    }
+
+    .activiteVille2 {
+        flex-direction: column;
+        height: 680px;
+        width: 350px;
+        margin:0;
+    }
+    
+    .activiteCol1 {
+        width: 350px;
+        height: 200px;
+        margin: 0;
+    }
+    
+    .activiteCol2 {
+        width: 350px;
+        height: 425px;
+        margin: 0;
+    }
+
+    .activiteGrand {
+        height: 200px;
+        width: 350px;
+    }
+    
+    .activiteMoyen {
+        height: 200px;
+        width: 350px;
+    }
+    
+    .activitePetit {
+        height: 200px;
+        width: 350px;
+    }
+
+    .imgActiviteGrand {
+        height: 80%;
+    }
+    
+    .imgActiviteMoyen{
+        height: 80%;
+    }
+    
+    .imgActivitePetit {
+        height: 80%;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .elementFooterParent {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media all and (max-width: 760px) {
     html {
         height: 150%;
     }
@@ -623,7 +891,7 @@ button {
     .hebergement {
         width: 350px;
         height: 200px;
-        box-shadow: 1px 2px 1px 1px #F2F2F2;
+        box-shadow: 2px 5px 10px 1px #F2F2F2;
     }
     
     .imgsHebergement{
@@ -660,7 +928,7 @@ button {
     .popularite {
         height: 130px;
         width: 320px;
-        box-shadow: 1px 2px 1px 1px #F2F2F2;
+        box-shadow: 2px 5px 10px 1px #F2F2F2;
     }
 
     .imgsPopularite {
@@ -745,7 +1013,8 @@ button {
     }
 
     .elementFooterParent {
-
-    flex-direction: column;
-    height: 500px;
+        flex-direction: column;
+        height: 500px;
+    }
 }
+
